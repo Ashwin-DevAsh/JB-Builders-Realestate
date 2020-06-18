@@ -1,0 +1,149 @@
+$yellow:#F4C724;
+
+.header{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+
+    .navbar{
+        height: 90px;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 4;
+
+        .titleContainer{
+            margin-left:90px;
+            padding: 5px 10px;
+            padding-bottom: 22px;
+            border-radius: 50px;
+            height: 25px;
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            background-color: $yellow;
+            opacity: 0.8;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+            :hover{
+                cursor: pointer;
+            }
+
+            img{
+                z-index: 2;
+                height: 30px;
+                margin-top: 9px;
+                margin-left: 10px;
+                width: 30px;
+            }
+
+           .title{
+                text-align: center;
+                margin-left: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                color: black;
+            }
+            p{
+                text-align: center;
+                margin-left: 15px;
+                font-size: 10px;
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        .rightHeader{
+            margin-left: 200px;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            h4{
+                height: 20px;
+                color: gainsboro;
+            }
+
+            div{
+                :hover{
+                    cursor: pointer;
+                    color: $yellow;
+                }
+            }
+        }
+
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+    .imageCover{
+        background-color: black;
+        opacity: 0.7;
+        height: 100%;
+        top: 0px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+
+    }
+
+    .centerContent{
+        display: flex;
+        align-items: center;
+        z-index: 3;
+        flex-direction: column;
+        max-width: 500px;
+        position: absolute;
+        justify-content: center;
+
+        .centerTitle{
+            h3{
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+            }
+            p{
+                color: gray;
+                font-weight: bold;
+           
+                text-align: center;
+           
+
+            }
+            height: 100px;
+            
+        }
+      
+    }
+}
+
+@media (max-width:1024px){
+   .header{
+       .navbar{
+           .rightHeader{
+                display: none;
+           }
+           .titleContainer{
+               margin-left:20px ;
+           }
+       }
+   }
+}
+
+@media (max-width:500px){
+    .service{
+        height: 130%;
+    }
+}

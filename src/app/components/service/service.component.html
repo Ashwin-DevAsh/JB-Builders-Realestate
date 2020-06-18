@@ -1,0 +1,58 @@
+<div class="service">
+    <div
+        class="header"
+    >
+       
+       <h1>Our Services</h1>
+
+     
+
+    </div>
+
+    <div class="main-container">
+        <!-- <div class="left-container">
+           <img 
+             src="/assets/images/engneering.jpg">
+        </div> -->
+
+        <div *ngFor="let item of services" >
+            <div class="right-container">
+
+                <div
+                   class="listTile"
+                >
+    
+                  <div
+                    class="image"
+                  >
+    
+                      <img [src]="item.image">
+    
+                  </div>
+    
+                  <div
+                    class="heading-container"
+                  >
+                        <div
+                           class="heading"
+                        >
+                            <h1>
+                               {{item.title}}
+                            </h1>
+    
+                        </div>
+                        <div
+                           class="sub-heading"
+                        >
+                            <p>
+                                {{item.subTitle}}
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    
+    </div>
+</div>

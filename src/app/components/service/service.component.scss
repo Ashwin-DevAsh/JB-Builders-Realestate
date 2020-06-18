@@ -1,0 +1,142 @@
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    
+    .header{
+        margin-top: 50px;
+        display: flex;
+        width: 401px;
+        height: 300px;
+     
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1{
+            font-weight: bold;
+            text-align: center;
+            font-size: 50px;
+            width: 400px;
+            height: 100px;
+        }
+        p{
+            text-align: center;
+            color: gray;
+        }
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+
+        .right-container{
+
+          display: flex;
+          margin: 50px;
+          justify-content: center;
+
+          .listTile{
+             
+              display: grid;
+              grid-template-columns: 30% 70%;
+              height: 100px;
+
+            
+              .image{
+                
+                  img{
+                      height: 160px;
+                      width: 160px;
+                      border-radius: 50%;
+                  }
+              }
+              
+
+              .heading-container{
+
+                .heading{
+                    height: 50px;
+                    h1{
+                        width: 500px;
+                        height: 50px;
+                    }
+                }
+
+                .sub-heading{
+                   width: 500px;
+                }
+              }
+
+          }
+        }
+    }
+}
+
+@media (max-width:1500px){
+    .listTile{
+        grid-template-columns: 100%;
+        .image{
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width:1000px){
+
+  
+
+    .service{
+        width: 95%;
+        margin-right: 20px;
+        .header{
+            display: none;
+        }
+        .main-container{
+            grid-template-columns: 100%;
+            .right-container{
+                width: 100%;
+                display: flex;
+                margin: 10px;
+                justify-content: center;
+                align-items: center;
+                .listTile{
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    .heading-container{
+                        .heading{
+                            h1{
+                               width: 100%;
+                                text-align: center;
+                            }
+                           
+                        }
+
+                        .sub-heading{
+                             width: 100%;
+                             p{
+                                 text-align: center;
+                             }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+   
+}
+
+@media (max-width:500px){
+    .service{
+        height: 130%;
+    }
+}
