@@ -1,0 +1,108 @@
+.about{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    
+    .header{
+        margin-top: 50px;
+        display: flex;
+        width: 401px;
+        height: 300px;
+     
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1{
+            font-weight: bold;
+            text-align: center;
+            font-size: 50px;
+            width: 400px;
+            height: 100px;
+        }
+        p{
+            text-align: center;
+
+        }
+    }
+
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .left-container{
+
+            height: 80%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            .centerTitle{
+                display: flex;
+                justify-content: center;
+                width: 500px;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: black;
+                    height: 100px;
+                }
+                p{
+                    color: gray;
+                    font-weight: bold;
+               
+                    text-align: center;
+               
+                }
+                
+            }
+        }
+
+    }
+}
+
+@media (max-width:600px){
+   .about{
+       margin-top: 10%;
+      .main-container{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          .left-container{
+              width: 100%;
+          }
+          .right-container{
+            width: 100%;
+            .centerTitle{
+               width: 90%;
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: black;
+                    height: 100px;
+                }
+            }
+             
+          }
+      }
+   }
+}
