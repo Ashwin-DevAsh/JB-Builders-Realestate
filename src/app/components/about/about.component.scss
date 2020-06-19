@@ -1,3 +1,5 @@
+$orange : #ff3700;
+
 .about{
 
     display: flex;
@@ -61,7 +63,7 @@
                     text-align: center;
                     font-size: 40px;
                     font-weight: bold;
-                    color: black;
+                    color: $orange;
                     height: 100px;
                 }
                 p{
@@ -78,7 +80,7 @@
     }
 }
 
-@media (max-width:600px){
+@media (max-width:800px){
    .about{
        margin-top: 10%;
       .main-container{
@@ -94,11 +96,8 @@
             .centerTitle{
                width: 90%;
                 h3{
-                    text-align: center;
                     font-size: 30px;
-                    font-weight: bold;
-                    color: black;
-                    height: 100px;
+                
                 }
             }
              

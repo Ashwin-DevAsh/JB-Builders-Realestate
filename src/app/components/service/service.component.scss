@@ -35,6 +35,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         
+        
 
         .right-container{
 
@@ -95,12 +96,12 @@
   
 
     .service{
-        width: 95%;
-        padding-right: 20px;
+        padding-bottom: 10vh;
         .header{
             display: none;
         }
         .main-container{
+            width: 95%;
             grid-template-columns: 100%;
             .right-container{
                 width: 100%;
