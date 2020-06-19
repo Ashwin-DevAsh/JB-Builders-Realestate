@@ -101,8 +101,9 @@
             display: none;
         }
         .main-container{
-            width: 95%;
+            width: 100%;
             grid-template-columns: 100%;
+            padding-right:20px ;
             .right-container{
                 width: 100%;
                 display: flex;
